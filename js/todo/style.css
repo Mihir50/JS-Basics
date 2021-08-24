@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: -webkit-linear-gradient(65deg, #9ac9e7 50%, #e1e6fa 50%);
+    min-height: 100vh;
+    font-family: "Poppins";
+    color: #fff;  
+}
+
+h1{
+    padding: 10px;
+}
+
+form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+header{
+    background-color: rgb(62, 128, 167);
+    max-width: 400px;
+    margin: 50px auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+form input,form button {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: #fff;
+}
+
+form button{
+    color: rgb(62, 128, 167);
+    transition: all 0.3s ease;    
+}
+
+form button:hover{
+    background: #9ac9e7;
+    color: #fff;
+}
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list{
+    min-width: 30%;
+    list-style: none;
+    
+}
+
+.todo{
+    display: flex;
+    background: #fff;
+    margin: 0.5rem;
+    color: #000;
+    font-size: 1.5rem;
+    justify-content: space-between;
+    transition: all 0.4s ease;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.4);
+}
+
+.todo li{
+    flex: 1;
+}
+
+.complete-btn,.remove-btn{
+    background: #ff6f47;
+    color: #fff;
+    font-size: 0.9rem;
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.complete-btn{
+    background: rgb(73, 202, 73);
+}
+
+.todo-item{
+    padding: 0.4rem 0.5rem;
+}
+
+.fa-check,.fa-trash{
+    pointer-events: none;
+}
+
+
+
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.7; 
+}
+
+.fall{
+    transform: translateY(8rem) rotateZ(30deg);
+    opacity: 0;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;       
+    outline: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+    width: 15vw;
+    padding: 1rem;
+    font-size: 1rem;
+
+}
+
+.select{
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.select::after{
+    content: "\25BC";
+    position: absolute;
+    background: rgb(62, 128, 167);
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+    transition: all 0.3s ease ;
+}
+
+.select:hover::after{
+    background: #fff;
+    color: rgb(62, 128, 167);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
